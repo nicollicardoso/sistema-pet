@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de gestão para clínicas veterinárias e pet shops.">
+    <meta name="author" content="Nicoli">
+    <title>Gestão para Clínicas Veterinárias</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 200px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        figure img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #2e7d32;
+            color: white;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        #contato {
+            text-align: center;
+        }
+
+        #contato form {
+            margin: auto;
+            max-width: 400px;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #1b5e20;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Nome: Nicoli -->
+<!-- RA:  5175275 -->
+
+<header>
+    <h1>Sistema Pet</h1>
+    <img src="img/stm.png" alt="Logo do Sistema Pet">
+    
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#demo">Demonstração</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="sobre">
+        <h2>Sobre o Sistema</h2>
+        <p>
+            O Sistema Pet é um sistema completo para clínicas veterinárias e pet shops,
+            permitindo o controle de clientes, agendamentos, estoque e financeiro.
+        </p>
+
+        <figure>
+            <img src="img/interface.png" alt="Sistema sendo utilizado em um computador">
+            <figcaption>Interface intuitiva do sistema</figcaption>
+        </figure>
+    </section>
+
+    <section id="planos">
+        <h2>Planos e Preços</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Plano</th>
+                    <th>Preço Mensal</th>
+                    <th>Recursos</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Básico</td>
+                    <td>R$49,90</td>
+                    <td>Controle de clientes e agendamentos</td>
+                </tr>
+
+                <tr>
+                    <td>Profissional</td>
+                    <td>R$99,90</td>
+                    <td>Inclui financeiro e relatórios</td>
+                </tr>
+
+                <tr>
+                    <td>Premium</td>
+                    <td>R$149,90</td>
+                    <td>Completo com suporte prioritário</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="demo">
+        <h2>Veja o Sistema em Ação</h2>
+
+        <div style="text-align: center;">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/xMkEu8N3vSk?si=LZq27e8RAYx1DcS9"
+                title="Demonstração do sistema"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+
+        <form>
+            <fieldset>
+                <legend>Informações de Contato</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Sistema Pet - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

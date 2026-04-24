@@ -1,2 +1,4 @@
-# sistema-pet
-Projeto de landing page para sistema de gestão de clínicas veterinárias e pet shops.
+# Projeto Landing Page
+
+Nome: Nicoli  
+RA: 5175275
