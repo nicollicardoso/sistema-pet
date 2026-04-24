@@ -1,4 +1,4 @@
 # Projeto Landing Page
 
-Nome: Nicoli  
+Nome: Nicolli  
 RA: 5175275
